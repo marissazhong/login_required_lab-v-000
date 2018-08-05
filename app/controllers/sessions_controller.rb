@@ -16,8 +16,4 @@ class SessionsController < ApplicationController
     redirect_to controller: 'application', action: 'hello'
   end
 
-  def hello
-    redirect_to controller: 'sessions', action: 'new' unless session[:name]
-  end
-
 end
